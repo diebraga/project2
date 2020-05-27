@@ -1,7 +1,10 @@
 import React from 'react';
 
 import { TiCode } from 'react-icons/ti';
-import { FiLogIn } from 'react-icons/fi';
+import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
+
+import Input from '../_components/input';
+import Button from '../_components/button';
 
 import { Container, Content, Background } from './styles';
 
@@ -15,11 +18,15 @@ const SignIn: React.FC = () => {
           <form>
             <h1>Login in your account</h1>
 
-            <input placeholder="E-mail" />
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input
+              name="password"
+              icon={FiLock}
+              type="password"
+              placeholder="User name"
+            />
 
-            <input type="password" placeholder="User name" />
-
-            <button type="submit">Submit</button>
+            <Button type="submit">Submit</Button>
 
             <br />
             <a href="">I forgot my password</a>
