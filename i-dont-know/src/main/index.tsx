@@ -2,15 +2,13 @@ import React from 'react';
 
 import { Container } from './styles';
 
+import NavBar from '../_components/navbar';
+
 const Main: React.FC = () => {
   return (
     <>
       <Container>
-        <h1>Hello</h1>
-        <hr />
-        <ul>
-          <li>Guys</li>
-        </ul>
+        <NavBar />
       </Container>
     </>
   );

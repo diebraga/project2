@@ -13,10 +13,10 @@ const SignIn: React.FC = () => {
     <>
       <Container>
         <Content>
-          <TiCode size={200} />
+          <TiCode color="#ff9000" size={200} />
 
           <form>
-            <h1>Login in your account</h1>
+            <h1>iTenterprises</h1>
 
             <Input name="email" icon={FiMail} placeholder="E-mail" />
             <Input

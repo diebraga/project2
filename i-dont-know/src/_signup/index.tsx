@@ -15,7 +15,7 @@ const SignUp: React.FC = () => {
         <Background />
 
         <Content>
-          <TiCode size={200} />
+          <TiCode color="#ff9000" size={200} />
 
           <form>
             <h1>Signup for free</h1>
