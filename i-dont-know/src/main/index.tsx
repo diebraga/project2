@@ -6,6 +6,7 @@ import { Container, Banner, Content, Form } from './styles';
 import NavBar from '../_components/navbar';
 import Input from '../_components/input';
 import Button from '../_components/button';
+import Footer from '../_components/footer';
 
 const Main: React.FC = () => {
   return (
@@ -57,7 +58,9 @@ const Main: React.FC = () => {
             />
             <br />
           </form>
+          <Button>Send</Button>
         </Form>
+        <Footer />
       </Container>
     </>
   );

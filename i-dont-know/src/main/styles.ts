@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
+
 import bannerBackground from '../_assets/banner.jpg';
 import bannerBackground2 from '../_assets/banner2.jpg';
 
@@ -52,6 +54,14 @@ export const Form = styled.div`
     margin-top: 30px;
   }
 
-  div {
+  button {
+    background: #eb3f3b;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5%;
+
+    &:hover {
+      background: ${shade(0.2, '#eb3f3b')};
+    }
   }
 `;
