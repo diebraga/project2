@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { FiFileText, FiUser, FiPhone, FiMail } from 'react-icons/fi';
 import { Container, Banner, Content, Form } from './styles';
@@ -21,18 +22,32 @@ const Main: React.FC = () => {
         </Banner>
         <Content>
           <section>
-            Whenever you want rent free spaces in you company iTenterprises is
-            the best solution.
+            <h2>Space solution</h2>
+            <p>
+              More than space solution, iTenterprises is a greate improvement
+              opportunity for both IT business and profissionals.
+              <br />
+              <br />
+              Search the best companies for you based on your skills set on our
+              <br />
+              <Link to="/discovery">Discovery</Link>
+              &nbsp; section now.
+            </p>
           </section>
 
-          <aside>aaa</aside>
+          <aside />
 
           <section>
-            <h1>How it works</h1>
+            <h2>How it works</h2>
             <p>
-              Companies and IT business can rent empity spaces in their offices,
-              greate opportunity for professionals develop their skills and
-              companies discovery new talents.
+              Whenever IT comapanies and business have empity spaces in their
+              offices their can offer it for a price or for free.
+              <br />
+              <br />
+              If you're an It professional looking for a productive space to
+              work send your request for your favorite company or starup now.
+              <br />
+              <Link to="/register">Get Started</Link>
             </p>
           </section>
         </Content>

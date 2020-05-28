@@ -32,6 +32,20 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
+  h2 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 23px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
   aside {
     height: 394px;
     background: url(${bannerBackground2}) no-repeat center;
