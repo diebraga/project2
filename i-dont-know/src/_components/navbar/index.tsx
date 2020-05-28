@@ -17,9 +17,11 @@ const NavBar: React.FC = () => {
             </Link>
             <TiCode size={50} />
             &nbsp; &nbsp;&nbsp;
-            <Link to="/">For Business</Link>
+            <Link to="/forusers">Users</Link>
             &nbsp; &nbsp;&nbsp;
-            <Link to="/">For Users</Link>
+            <Link to="/forbusiness">Business</Link>
+            &nbsp; &nbsp;&nbsp;
+            <Link to="/explore">Explore</Link>
           </nav>
 
           <aside>
