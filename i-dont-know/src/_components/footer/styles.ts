@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-export const Container = styled.header`
+export const Container = styled.footer`
   background: transparent;
   padding: 0 30px;
 `;
