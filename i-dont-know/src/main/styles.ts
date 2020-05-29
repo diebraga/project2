@@ -20,7 +20,6 @@ export const Banner = styled.div`
   display: flex;
   place-content: center;
   align-content: center;
-  align-self: auto;
   h1 {
     max-width: 500px;
     font-size: 50px;

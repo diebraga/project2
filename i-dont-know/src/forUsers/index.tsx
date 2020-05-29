@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, Banner, Content, GetStarted } from './styles';
 
@@ -13,24 +14,40 @@ const ForUsers: React.FC = () => {
         <NavBar />
         <Banner>
           <h1>
-            "We connect bussiness and IT professionals, in a simple and
-            innovative way."
+            "Are you a skilled IT professional looking for a good place to
+            work?"
+            <br />
+            <br />
           </h1>
         </Banner>
         <Content>
           <section>
-            Whenever you want rent free spaces in you company iTenterprises is
-            the best solution.
+            <h2>Work environment</h2>
+            <p>
+              Can you imagine you work in a professional environment, where you
+              can learn from other developers and potentially be hired
+              <br />
+              <br />
+              Search the best companies for you based on your skills set on our
+              <br />
+              <Link to="/discovery">Discovery</Link>
+              &nbsp; section now.
+            </p>
           </section>
 
-          <aside>aaa</aside>
+          <aside />
 
           <section>
-            <h1>How it works</h1>
+            <h2>Progress and friendship</h2>
             <p>
-              Companies and IT business can rent empity spaces in their offices,
-              greate opportunity for professionals develop their skills and
-              companies discovery new talents.
+              Boost your skills, make new friends and discovery a whole new
+              world of opportunities with iTenterprises.
+              <br />
+              <br />
+              We believe that friendship and networking is very important for
+              your carrier, that’s why our platform is made for.
+              <br />
+              <Link to="/register">Get Started</Link>
             </p>
           </section>
         </Content>
