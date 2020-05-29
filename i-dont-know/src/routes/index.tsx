@@ -6,6 +6,7 @@ import SignIn from '../_signin';
 import SignUp from '../_signup';
 import ForUsers from '../forUsers';
 import ForBusiness from '../forBusiness';
+import Explore from '../explore';
 
 export const Routes: React.FC = () => (
   <Switch>
@@ -14,6 +15,7 @@ export const Routes: React.FC = () => (
     <Route path="/register" component={SignUp} />
     <Route path="/forusers" component={ForUsers} />
     <Route path="/forbusiness" component={ForBusiness} />
+    <Route path="/explore" component={Explore} />
   </Switch>
 );
 
