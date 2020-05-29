@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import bannerBackground5 from '../_assets/banner5.jpg';
-import bannerBackground6 from '../_assets/banner6.jpg';
+import bannerBackground5 from '../_assets/banner7.jpg';
+import bannerBackground6 from '../_assets/banner5.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -31,6 +31,20 @@ export const Banner = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+
+  h2 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  p {
+    font-size: 23px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+    }
+  }
 
   aside {
     height: 394px;
