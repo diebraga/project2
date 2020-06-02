@@ -55,7 +55,9 @@ const ForBusiness: React.FC = () => {
         </Content>
         <GetStarted>
           <h1>Join Us</h1>
-          <Button>Get started</Button>
+          <Link to="/register">
+            <Button>Get started</Button>
+          </Link>
         </GetStarted>
         <Footer />
       </Container>

@@ -1,15 +1,11 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
-  display: grid;
-  height: 500px;
-  background: #ff9000;
-  align-items: stretch;
-`;
-
 export const ContentBox = styled.div`
-  display: grid;
-  height: 500px;
-  background: #fff;
-  align-items: stretch;
+  display: flex;
+  background: transparent;
+  height: 180px;
+
+  h1 {
+    padding: 60px 0 60px 40px;
+  }
 `;

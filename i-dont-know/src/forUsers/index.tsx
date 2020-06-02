@@ -30,7 +30,7 @@ const ForUsers: React.FC = () => {
               <br />
               Search the best companies for you based on your skills set on our
               <br />
-              <Link to="/discovery">Discovery</Link>
+              <Link to="/explore">Explore</Link>
               &nbsp; section now.
             </p>
           </section>
@@ -53,7 +53,9 @@ const ForUsers: React.FC = () => {
         </Content>
         <GetStarted>
           <h1>Join Us</h1>
-          <Button>Get started</Button>
+          <Link to="/register">
+            <Button>Get started</Button>
+          </Link>
         </GetStarted>
         <Footer />
       </Container>

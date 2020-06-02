@@ -7,7 +7,9 @@ const Cards: React.FC = () => {
   return (
     <>
       <Container>
-        <h1>Hello World</h1>
+        <br />
+        <br />
+        <br />
         <div className="card-wrapper">
           <div className="card">
             <img
@@ -57,6 +59,7 @@ const Cards: React.FC = () => {
             <Button>Request</Button>
           </div>
         </div>
+        <br />
       </Container>
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Div, ContentBox } from './styles';
+import { ContentBox } from './styles';
 
 import NavBar from '../_components/navbar';
 import Footer from '../_components/footer';
@@ -11,6 +11,10 @@ const Explore: React.FC = () => {
   return (
     <>
       <NavBar />
+      <ContentBox>
+        <br />
+        <h1>What's the best company for you?</h1>
+      </ContentBox>
       <Cards />
 
       <Footer />

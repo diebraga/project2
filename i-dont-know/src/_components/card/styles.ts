@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Container = styled.section`
-  padding: 18rem 0;
-
+  margin: auto;
   text-align: center;
   position: relative;
+
+  background: #ff9000;
 
   .card-wrapper {
     display: flex;
@@ -25,6 +26,15 @@ export const Container = styled.section`
     flex-direction: column;
     justify-content: center;
     margin: 2rem 0;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   }
 
   .card .card-img {

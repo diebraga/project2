@@ -21,6 +21,7 @@ export const Banner = styled.div`
   place-content: center;
   align-content: center;
   align-self: auto;
+
   h1 {
     max-width: 500px;
     font-size: 50px;
@@ -73,6 +74,10 @@ export const GetStarted = styled.div`
     color: #fff;
     font-size: 18px;
     margin-bottom: 5%;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
 
     &:hover {
       background: ${shade(0.2, '#eb3f3b')};
