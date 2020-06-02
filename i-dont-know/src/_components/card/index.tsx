@@ -1,69 +1,62 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
-import { Container, Div } from './styles';
+import { Container } from './styles';
+import Button from '../button';
 
 const Cards: React.FC = () => {
   return (
     <>
       <Container>
-        <Div>
-          <div className="card-image" />
-          <div className="card-text">
-            <h2>Post One</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae</p>
-          </div>
-          <div className="card-stats">
+        <h1>Hello World</h1>
+        <div className="card-wrapper">
+          <div className="card">
+            <img
+              src="https://images.pexels.com/photos/7065/space-desk-office-hero-7065.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="Diego"
+              className="card-img"
+            />
+            <h1>Gooogle</h1>
+            <h2 className="city">Milan - Italy</h2>
+            <h2 className="price">Price: 20$ /Day</h2>
             <Button>Request</Button>
+          </div>
 
-            <div className="stat" />
-          </div>
-        </Div>
-        <Div>
-          <div className="card-image" />
-          <div className="card-text">
-            <h2>Post One</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
-              temporibus omnis illum maxime quod deserunt eligendi dolor
-            </p>
-          </div>
-          <div className="card-stats">
+          <div className="card">
+            <img
+              src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="Diego"
+              className="card-img"
+            />
+            <h1>Airtnt</h1>
+            <h2 className="city">San Paolo - Brazil</h2>
+            <h2 className="price">Price: 0$ /Day</h2>
             <Button>Request</Button>
+          </div>
 
-            <div className="stat" />
-          </div>
-        </Div>
-        <Div>
-          <div className="card-image" />
-          <div className="card-text">
-            <h2>Post One</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
-              temporibus omnis illum maxime quod deserunt eligendi dolor
-            </p>
-          </div>
-          <div className="card-stats">
+          <div className="card">
+            <img
+              src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="Diego"
+              className="card-img"
+            />
+            <h1>uUber</h1>
+            <h2 className="city">Dublin - Ireland</h2>
+            <h2 className="price">Price: 30$ /Day</h2>
             <Button>Request</Button>
+          </div>
 
-            <div className="stat" />
-          </div>
-        </Div>
-        <Div>
-          <div className="card-image" />
-          <div className="card-text">
-            <h2>Post One</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
-              temporibus omnis illum maxime quod deserunt eligendi dolor
-            </p>
-          </div>
-          <div className="card-stats">
+          <div className="card">
+            <img
+              src="https://images.pexels.com/photos/7070/space-desk-workspace-coworking.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt="Diego"
+              className="card-img"
+            />
+            <h1>iRevolut</h1>
+            <h2 className="city">Toronto - Canada</h2>
+            <h2 className="price">Price: 25$ /Day</h2>
             <Button>Request</Button>
-
-            <div className="stat" />
           </div>
-        </Div>
+        </div>
       </Container>
     </>
   );

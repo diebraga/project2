@@ -1,87 +1,87 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
-import bannerBackground5 from '../../_assets/banner3.jpg';
+export const Container = styled.section`
+  padding: 18rem 0;
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  color: black;
-`;
+  text-align: center;
+  position: relative;
 
-export const Div = styled.div`
-    display: grid;
-    grid-template-columns: 280px;
-    grid-template-rows: 140px 160px 60px;
-    grid-template-areas: 'image' 'text' 'stats';
-
-    border-radius: 18px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    font-family: sans-serif;
-    text-align: center;
-    transition: 0.5s ease;
-    cursor: pointer;
-    margin: 30px;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-    }
-
-
-  .card-image {
-    grid-area: image;
-    background: url(${bannerBackground5}) no-repeat center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-  }
-
-  .card-text p {
-    color: grey;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  .card-text h2 {
-    margin-top: 0px;
-    font-size: 28px;
-  }
-
-  .card-text {
-    grid-area: text;
-    margin: 25px;
-  }
-
-  .card-text p {
-    color: grey;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  .card-text h2 {
-    margin-top: 0px;
-    font-size: 28px;
-  }
-
-  .card-stats {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background: #fff;
-  }
-
-  .card-stats .stat {
+  .card-wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    align-content: center;
     flex-direction: column;
+    color: black;
+  }
 
-    color: white;
-    padding: 10px;
+  .card {
+    width: 280px;
+    height: 400px;
+    display: flex;
+    background-color: #ebeef8;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0;
+  }
 
+  .card .card-img {
+    width: 90%;
+    height: 180px;
+    object-fit: cover;
+  }
 
+  .profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+
+  .card h1 {
+    color: #5d6464;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .city {
+    color: #5d6464;
+    font-size: 15px;
+    font-weight: 380;
+    margin-bottom: 13px;
+  }
+
+  .price {
+    color: #777;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  button {
+    background: #eb3f3b;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5%;
+    width: 250px;
+    border-radius: 5px;
+
+    &:hover {
+      background: ${shade(0.2, '#eb3f3b')};
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .card-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      margin: 20px;
+    }
+  }
 `;

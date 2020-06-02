@@ -11,13 +11,7 @@ const Explore: React.FC = () => {
   return (
     <>
       <NavBar />
-      <Div>
-        <Cards />
-      </Div>
-      <ContentBox />
-      <Div>
-        <Cards />
-      </Div>
+      <Cards />
 
       <Footer />
     </>
