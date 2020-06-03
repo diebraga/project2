@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
 import { TiCode } from 'react-icons/ti';
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
@@ -44,20 +45,19 @@ const SignIn: React.FC = () => {
               name="password"
               icon={FiLock}
               type="password"
-              placeholder="User name"
+              placeholder="Your password"
             />
 
             <Button type="submit">Submit</Button>
 
             <br />
-            <a href="">I forgot my password</a>
           </Form>
           <br />
 
-          <a href="">
+          <Link to="/register">
             <FiLogIn />
             Create account
-          </a>
+          </Link>
         </Content>
 
         <Background />
