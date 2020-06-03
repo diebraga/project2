@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Form } from '@unform/web';
+import * as Yup from 'yup';
 
 import { TiCode } from 'react-icons/ti';
 import { FiArrowLeft, FiUser, FiLock, FiMail } from 'react-icons/fi';
@@ -10,9 +11,24 @@ import Button from '../_components/button';
 import { Container, Content, Background } from './styles';
 
 const SignUp: React.FC = () => {
-  function handleSubmit(data: object): void {
-    console.log(data);
-  }
+  const handleSubmit = useCallback(async (data: object) => {
+    try {
+      const schema = Yup.object().shape({
+        email: Yup.string()
+          .required('email required')
+          .email('Email has to be valid'),
+        password: Yup.string().min(4, 'Minimun of 4 caracters'),
+      });
+      console.log(data);
+
+      await schema.validate(data, {
+        abortEarly: false,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
   return (
     <>
       <Container>

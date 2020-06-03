@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { Form } from '@unform/web';
-
+import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
 import { FiFileText, FiUser, FiPhone, FiMail, FiLock } from 'react-icons/fi';
@@ -12,9 +12,25 @@ import Button from '../_components/button';
 import Footer from '../_components/footer';
 
 const Main: React.FC = () => {
-  function handleSubmit(data: object): void {
-    console.log(data);
-  }
+  const handleSubmit = useCallback(async (data: object) => {
+    try {
+      const schema = Yup.object().shape({
+        name: Yup.string().required('name required'),
+        email: Yup.string()
+          .required('email required')
+          .email('Email has to be valid'),
+        number: Yup.string().min(4).max(20).required('Phone number required'),
+        message: Yup.string().required('required'),
+      });
+      console.log(data);
+
+      await schema.validate(data, {
+        abortEarly: false,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
 
   return (
     <>
