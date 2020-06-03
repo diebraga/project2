@@ -1,10 +1,12 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
+import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
-import { FiFileText, FiUser, FiPhone, FiMail, FiLock } from 'react-icons/fi';
+import { FiFileText, FiUser, FiPhone, FiMail } from 'react-icons/fi';
 import { Container, Banner, Content, FormDiv } from './styles';
+import getValidationErrors from '../utils/getValidationErros';
 
 import NavBar from '../_components/navbar';
 import Input from '../_components/input';
@@ -12,14 +14,13 @@ import Button from '../_components/button';
 import Footer from '../_components/footer';
 
 const Main: React.FC = () => {
+  const formRef = useRef<FormHandles>(null);
   const handleSubmit = useCallback(async (data: object) => {
     try {
       const schema = Yup.object().shape({
-        name: Yup.string().required('name required'),
-        email: Yup.string()
-          .required('email required')
-          .email('Email has to be valid'),
-        number: Yup.string().min(4).max(20).required('Phone number required'),
+        name: Yup.string().required('required'),
+        email: Yup.string().required('required').email('Email not valid'),
+        number: Yup.string().min(4).max(20).required('required'),
         message: Yup.string().required('required'),
       });
       console.log(data);
@@ -29,6 +30,10 @@ const Main: React.FC = () => {
       });
     } catch (err) {
       console.log(err);
+
+      const errors = getValidationErrors(err);
+
+      formRef.current?.setErrors(errors);
     }
   }, []);
 
@@ -74,7 +79,7 @@ const Main: React.FC = () => {
           </section>
         </Content>
         <FormDiv>
-          <Form onSubmit={handleSubmit}>
+          <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
             <br />
             <Input name="name" icon={FiUser} placeholder="name" />
