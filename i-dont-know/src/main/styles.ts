@@ -58,7 +58,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Form = styled.div`
+export const FormDiv = styled.div`
   background: #ff9000;
   padding-left: 20%;
   padding-right: 20%;

@@ -1,8 +1,10 @@
 import React from 'react';
+import { Form } from '@unform/web';
+
 import { Link } from 'react-router-dom';
 
-import { FiFileText, FiUser, FiPhone, FiMail } from 'react-icons/fi';
-import { Container, Banner, Content, Form } from './styles';
+import { FiFileText, FiUser, FiPhone, FiMail, FiLock } from 'react-icons/fi';
+import { Container, Banner, Content, FormDiv } from './styles';
 
 import NavBar from '../_components/navbar';
 import Input from '../_components/input';
@@ -10,6 +12,10 @@ import Button from '../_components/button';
 import Footer from '../_components/footer';
 
 const Main: React.FC = () => {
+  function handleSubmit(data: object): void {
+    console.log(data);
+  }
+
   return (
     <>
       <Container>
@@ -51,8 +57,8 @@ const Main: React.FC = () => {
             </p>
           </section>
         </Content>
-        <Form>
-          <form id="">
+        <FormDiv>
+          <Form onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
             <br />
             <Input name="name" icon={FiUser} placeholder="name" />
@@ -60,9 +66,9 @@ const Main: React.FC = () => {
             <Input name="email" icon={FiMail} placeholder="E-mail" />
             <br />
             <Input
-              type="number"
-              name="email"
+              name="number"
               icon={FiPhone}
+              type="number"
               placeholder="Phone number"
             />
             <br />
@@ -71,10 +77,11 @@ const Main: React.FC = () => {
               icon={FiFileText}
               placeholder="Your message"
             />
+            <Button type="submit">Submit</Button>
             <br />
-          </form>
-          <Button>Send</Button>
-        </Form>
+            <br />
+          </Form>
+        </FormDiv>
         <Footer />
       </Container>
     </>
