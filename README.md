@@ -1,4 +1,5 @@
-# iTenterprises
+
+# iTenterprises  
 
 The app connects IT professionals looking for a great place to work, to companies 
 that are offering free spots in their companies and their set the prices.
@@ -74,23 +75,41 @@ Forms:
   message appears in the console and input.
   4. Try to submit the form with all inputs valid and verify that a no errors message appears 
   in your console and input.
-    Warning: Don't use Logs returning confidential data.
+    Warning: Don't use Logs returning confidential data in production.
 
-The App is full responsive in computers and moblile untill 360px width.
 
 ## Deployment
+  
+  The website is running deployed on Netlify:
+  https://inspiring-wing-60e4c6.netlify.app/
+  
+## Get Started.
 
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+<h4>Required*<h4/>
+  <h5>* Npm or Yarn<h5/>
+    <ul>
+      <li>`$ git clone` This project in your local repository. 
+      <li>`$ cd` The project in your editor.
+      <li>Run `$ npm instal` or `$ yarn` in your terminal.
+      <li>Run `$ npm instal` or `$ yarn`
+      <li>Done. the project is running on your localhost.
+    <ul/>
+        
+          
 ### Media
-- The photos used in this site were obtained from
+- The photos used in this site were obtained from:
   https://www.pexels.com/
 
 ### Acknowledgements
 
-- I received inspiration for this project from 
+- I received inspiration for this project from:
   https://www.wework.com/enterprise
   https://codeinstitute.net/
   https://www.airbnb.ie/
   https://rocketseat.com.br/
+  
+  
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. .❤❤❤
+
