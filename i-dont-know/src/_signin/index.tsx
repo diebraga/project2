@@ -18,7 +18,6 @@ const SignIn: React.FC = () => {
   const handleSubmit = useCallback(async (data: object) => {
     try {
       const schema = Yup.object().shape({
-        name: Yup.string().required('required'),
         email: Yup.string().required('required').email('Email not valid'),
         password: Yup.string().min(4, 'min 4 dig'),
       });
