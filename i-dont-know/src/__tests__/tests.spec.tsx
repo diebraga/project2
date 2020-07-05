@@ -1,6 +1,7 @@
 import { render, fireEvent, wait } from '@testing-library/react';
 import React from 'react';
 import Input from '../_components/input/index';
+import Button from '../_components/button';
 
 jest.mock('@unform/core', () => {
   return {
@@ -44,5 +45,23 @@ describe('Input element', () => {
       expect(containerElement).not.toHaveStyle('border-color: tomato');
       expect(containerElement).not.toHaveStyle('color: tomato');
     });
+  });
+});
+
+describe('button element', () => {
+  it('should be able to render button', () => {
+    const { getByTestId } = render(<Button />);
+
+    const buttonTestId = getByTestId('button-container');
+
+    expect(buttonTestId).toBeTruthy();
+  });
+
+  it('should be able to render button', () => {
+    const { getByTestId } = render(<Button />);
+
+    const buttonTestId = getByTestId('button-container');
+
+    expect(buttonTestId).toBeTruthy();
   });
 });
