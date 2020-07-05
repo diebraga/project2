@@ -9,23 +9,21 @@ import { Container, Content } from './styles';
 const Footer: React.FC = () => {
   return (
     <>
-      <Container>
+      <Container data-testid="footer-container">
         <Content>
           <nav>
-            <Link to="/">
-              <p>iTinterprises</p>
-            </Link>
+            <Link to="/">iTinterprises</Link>
             <TiCode size={50} />
             &nbsp; &nbsp;&nbsp;
-            <a href="https://github.com/diebraga">
+            <a href="https://github.com/diebraga" target="blank">
               <AiFillGithub size={50} />
             </a>
             &nbsp; &nbsp;&nbsp;
-            <a href="https://www.instagram.com/diebraga/">
+            <a href="https://www.instagram.com/diebraga/" target="blank">
               <AiFillInstagram size={50} />
             </a>
             &nbsp; &nbsp;&nbsp;
-            <a href="https://www.linkedin.com/in/diebraga/">
+            <a href="https://www.linkedin.com/in/diebraga/" target="blank">
               <AiFillLinkedin size={50} />
             </a>
           </nav>

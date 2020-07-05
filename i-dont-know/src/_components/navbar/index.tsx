@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
   return (
     <>
       <Container>
-        <Content>
+        <Content data-testid="navbar-container">
           <nav>
             <Link to="/">
               <p>iTinterprises</p>

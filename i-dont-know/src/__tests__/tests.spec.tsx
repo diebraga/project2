@@ -2,6 +2,8 @@ import { render, fireEvent, wait } from '@testing-library/react';
 import React from 'react';
 import Input from '../_components/input/index';
 import Button from '../_components/button';
+import Card from '../_components/card';
+import Navbar from '../_components/navbar';
 
 jest.mock('@unform/core', () => {
   return {
@@ -56,12 +58,14 @@ describe('button element', () => {
 
     expect(buttonTestId).toBeTruthy();
   });
+});
 
-  it('should be able to render button', () => {
-    const { getByTestId } = render(<Button />);
+describe('card element', () => {
+  it('should be able to render cards', () => {
+    const { getByTestId } = render(<Card />);
 
-    const buttonTestId = getByTestId('button-container');
+    const cardTestId = getByTestId('card-container');
 
-    expect(buttonTestId).toBeTruthy();
+    expect(cardTestId).toBeTruthy();
   });
 });
