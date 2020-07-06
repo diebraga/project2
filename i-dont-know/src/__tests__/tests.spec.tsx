@@ -6,6 +6,8 @@ import Card from '../_components/card';
 import Navbar from '../_components/navbar';
 import Footer from '../_components/footer';
 
+import SignIn from '../_signin';
+
 jest.mock('react-router-dom', () => {
   return {
     useHistory: jest.fn(),
@@ -95,5 +97,17 @@ describe('footer component', () => {
     const footerTestId = getByTestId('footer-container');
 
     expect(footerTestId).toBeTruthy();
+  });
+});
+
+describe(' component', () => {
+  it('should be able to render correctly', () => {
+    const { getByTestId, debug } = render(<SignIn />);
+
+    const footerTestId = getByTestId('signin-container');
+
+    expect(footerTestId).toBeTruthy();
+
+    debug();
   });
 });
