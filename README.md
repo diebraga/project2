@@ -46,7 +46,12 @@ with a get started.
 cards and input.
 
    Warning: The App is Entirely static but all the functions can be implemented at any time.
+   
 
+## Media
+
+<h3>Main</h3>
+<img src="_assets/1.jpeg" width="250" height="350"/> <img src="assets/2.jpeg" width="250" height="350"/>
 
 ## Technologies 
 
