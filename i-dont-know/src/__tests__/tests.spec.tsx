@@ -4,6 +4,14 @@ import Input from '../_components/input/index';
 import Button from '../_components/button';
 import Card from '../_components/card';
 import Navbar from '../_components/navbar';
+import Footer from '../_components/footer';
+
+jest.mock('react-router-dom', () => {
+  return {
+    useHistory: jest.fn(),
+    Link: ({ children }: { children: React.ReactNode }) => children,
+  };
+});
 
 jest.mock('@unform/core', () => {
   return {
@@ -67,5 +75,25 @@ describe('card element', () => {
     const cardTestId = getByTestId('card-container');
 
     expect(cardTestId).toBeTruthy();
+  });
+});
+
+describe('navbar component', () => {
+  it('should be able to render navbar correctly', () => {
+    const { getByTestId } = render(<Navbar />);
+
+    const navbarTestId = getByTestId('navbar-container');
+
+    expect(navbarTestId).toBeTruthy();
+  });
+});
+
+describe('footer component', () => {
+  it('should be able to render footer correctly', () => {
+    const { getByTestId } = render(<Footer />);
+
+    const footerTestId = getByTestId('footer-container');
+
+    expect(footerTestId).toBeTruthy();
   });
 });

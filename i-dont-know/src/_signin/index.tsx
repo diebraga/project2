@@ -37,7 +37,7 @@ const SignIn: React.FC = () => {
 
   return (
     <>
-      <Container>
+      <Container data-testid="signin-container">
         <Content>
           <TiCode color="#ff9000" size={200} />
 
