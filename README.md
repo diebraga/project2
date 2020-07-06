@@ -51,7 +51,7 @@ cards and input.
 ## Media
 
 <h3>Main</h3>
-<img src="_assets/1.jpeg" width="250" height="350"/> <img src="assets/2.jpeg" width="250" height="350"/>
+<img src="_assets/1.png" width="250" height="350"/> <img src="assets/2.png" width="250" height="350"/> <img src="assets/3.png" width="250" height="350"/> <img src="assets/4.png" width="250" height="350"/> <img src="assets/5.png" width="250" height="350"/> <img src="assets/6.png" width="250" height="350"/> <img src="assets/7.png" width="250" height="350"/>
 
 ## Technologies 
 
