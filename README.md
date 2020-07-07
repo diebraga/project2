@@ -65,23 +65,38 @@ cards and input.
 - ✅ **Lint** — ESlint/Prettier/Editor Config. 
 - ☑️ **Typescrit** — TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. 
 - 🔡 **Unform** — Easy peasy highly scalable ReactJS & React Native forms. 
+- 🔡 **Jest** — JavaScript Testing Framework. 
 
 ## Testing
+
+    **All components in the app are tested in unit tests using jest**
+    1. Go in the project folder and run: `yarn test` in your terminal.
+      -   Input element.
+          √ should be able to render an input
+              √ should be able to render an input
+      -   Button element
+          √ should be able to render button 
+      -   Card element
+          √ should be able to render cards
+      -   Navbar component
+          √ should be able to render navbar correctly
+      -   Footer component
+          √ should be able to render footer correctly 
 
 There are `console.log()`s as a test if the information has been sent or not in the forms.
 a validation returns the information and the possible errors.
 
 Forms:
   1. Go to "/", "/register" or "/login" pages, right click and inspect and sonsole.
-  2. Try to submit the empty form and verify that an error message about the required fields 
+  2. Try to submit the empty form and verify that an error mes
+  sage about the required fields 
   appears in the console and input.
   3. Try to submit the form with an invalid email address and verify that a relevant error 
   message appears in the console and input.
   4. Try to submit the form with all inputs valid and verify that a no errors message appears 
   in your console and input.
     Warning: Don't use Logs returning confidential data in production.
-
-
+    
 ## Deployment
   
   The website is running deployed on Netlify:
