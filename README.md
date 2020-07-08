@@ -21,7 +21,7 @@ that are offering free spots in their companies and their set the prices.
   list of companies that users can send their requests.
 
   The `login` and `register` page, all elements are made with all best pratices of HTML and it's proops, 
-  CSS flex box animations, and design patterns.
+  CSS flex box animations, and design patterns aiming better code manteinence and growth.
 
 ## Features
 
@@ -69,7 +69,7 @@ cards and input.
 ## Testing
 
     **All components in the app are tested in unit tests using jest**
-    1. Go in the project folder and run: `yarn test` in your terminal.
+    1. Go in the project folder and run: `yarn test` or `npm test` in your terminal.
       -   Input element.
           √ should be able to render an input
               √ should be able to render an input
@@ -84,7 +84,7 @@ cards and input.
        
    
    <pre>
-   Links routes in the app are mocked too.
+   Route Links in the app are mocked too.
    
    All <a> are workng.
   
@@ -94,7 +94,9 @@ cards and input.
    Brave
    Edge
    FireFox
-
+   
+   Using the inspector I tested responsivity in variety of screen sizes.
+   
 There are `console.log()`s as a test if the information has been sent or not in the forms.
 a validation returns the information and the possible errors.
    </pre>
@@ -109,7 +111,8 @@ Forms:
   message appears in the console and input.
   4. Try to submit the form with all inputs valid and verify that a no errors message appears 
   in your console and input.
-    Warning: Don't use Logs returning confidential data in production.
+    
+    *** Warning Logs shoulden't be used in production as they can return confidential data. ***
     
 ## Structure
 
