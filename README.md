@@ -21,7 +21,7 @@ that are offering free spots in their companies and their set the prices.
   list of companies that users can send their requests.
 
   The `login` and `register` page, all elements are made with all best pratices of HTML and it's proops, 
-  CSS flex box animations, and design patterns.
+  CSS flex box animations, and design patterns aiming better code manteinence and growth.
 
 ## Features
 
@@ -50,7 +50,6 @@ cards and input.
 
 ## Media
 
-<img src="assets/1.png" width="250" height="350"/> <img src="assets/2.png" width="250" height="350"/> <img src="assets/3.png" width="250" height="350"/> <img src="assets/4.png" width="250" height="350"/> <img src="assets/5.png" width="250" height="350"/> <img src="assets/6.png" width="250" height="350"/> <img src="assets/7.png" width="250" height="350"/> <img src="assets/8.png" width="250" height="350"/> <img src="assets/9.png" width="250" height="350"/>
 
 ## Technologies 
 
@@ -65,23 +64,86 @@ cards and input.
 - ✅ **Lint** — ESlint/Prettier/Editor Config. 
 - ☑️ **Typescrit** — TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. 
 - 🔡 **Unform** — Easy peasy highly scalable ReactJS & React Native forms. 
+- 🔡 **Jest** — JavaScript Testing Framework. 
 
 ## Testing
 
+    **All components in the app are tested in unit tests using jest**
+    1. Go in the project folder and run: `yarn test` or `npm test` in your terminal.
+      -   Input element.
+          √ should be able to render an input
+              √ should be able to render an input
+      -   Button element
+          √ should be able to render button 
+      -   Card element
+          √ should be able to render cards
+      -   Navbar component
+          √ should be able to render navbar correctly
+      -   Footer component
+          √ should be able to render footer correctly 
+       
+   
+   <pre>
+   Route Links in the app are mocked too.
+   
+   All <a> are workng.
+  
+   I tested the app manually on a variaty of browsers:
+   
+   Chrome
+   Brave
+   Edge
+   FireFox
+   
+   Using the inspector I tested responsivity in variety of screen sizes.
+   
 There are `console.log()`s as a test if the information has been sent or not in the forms.
 a validation returns the information and the possible errors.
+   </pre>
+
 
 Forms:
   1. Go to "/", "/register" or "/login" pages, right click and inspect and sonsole.
-  2. Try to submit the empty form and verify that an error message about the required fields 
+  2. Try to submit the empty form and verify that an error mes
+  sage about the required fields 
   appears in the console and input.
   3. Try to submit the form with an invalid email address and verify that a relevant error 
   message appears in the console and input.
   4. Try to submit the form with all inputs valid and verify that a no errors message appears 
   in your console and input.
-    Warning: Don't use Logs returning confidential data in production.
+    
+    *** Warning Logs shoulden't be used in production as they can return confidential data. ***
+    
+## Structure
+
+<pre>
+ Inside `src` folder you will find the all source code, with the respective folders representing the
+ component or the page in the App.
+ each folder has a index_file with the HTML code source.
+ and a styles_file with al the CSS code source.
+
+EX:
+  src_folder
+    signin_folder
+      index_file
+      styles_file
+    signup_folder
+      index_file
+      styles_file
+       
+ as I'm using the lib styled components, I'm importing the css to index_file rendered in html tags <> as a component.
+ 
+ EX: 
+ 
+ import { Container } from './styles';
+
+  <Container>
+    < h1 > {CSS from './styles' applied here} < /h1 >
+  </Container>
+      </pre>
 
 
+    
 ## Deployment
   
   The website is running deployed on Netlify:
@@ -103,6 +165,11 @@ Forms:
 ### Media
 - The photos used in this site were obtained from:
   https://www.pexels.com/
+  
+  App View Screenshots.
+  
+  <img src="assets/1.png" width="250" height="350"/> <img src="assets/2.png" width="250" height="350"/> <img src="assets/3.png" width="250" height="350"/> <img src="assets/4.png" width="250" height="350"/> <img src="assets/5.png" width="250" height="350"/> <img src="assets/6.png" width="250" height="350"/> <img src="assets/7.png" width="250" height="350"/> <img src="assets/8.png" width="250" height="350"/> <img src="assets/9.png" width="250" height="350"/>
+
 
 ### Acknowledgements
 
