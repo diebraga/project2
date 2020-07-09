@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { ContentBox } from './styles';
+import { ContentBox } from '../../_styles_css/explore/styles';
 
-import NavBar from '../_components/navbar';
-import Footer from '../_components/footer';
-import Cards from '../_components/card';
+import NavBar from '../../_components/navbar';
+import Footer from '../../_components/footer';
+import Cards from '../../_components/card';
 
 const Explore: React.FC = () => {
   return (

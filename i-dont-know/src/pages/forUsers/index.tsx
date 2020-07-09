@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container, Banner, Content, GetStarted } from './styles';
+import {
+  Container,
+  Banner,
+  Content,
+  GetStarted,
+} from '../../_styles_css/forUsers/styles';
 
-import NavBar from '../_components/navbar';
-import Button from '../_components/button';
-import Footer from '../_components/footer';
+import NavBar from '../../_components/navbar';
+import Button from '../../_components/button';
+import Footer from '../../_components/footer';
 
 const ForUsers: React.FC = () => {
   return (

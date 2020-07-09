@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import registerBackground from '../_assets/background.jpg';
+import loginBackground from '../../_assets/background2.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -46,7 +46,7 @@ export const Content = styled.div`
   }
 
   > a {
-    color: #fff;
+    color: #ff9000;
     transition: color 0.2s;
     display: block;
     margin-top: 24px;
@@ -60,13 +60,13 @@ export const Content = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.2, '#fff')};
+      color: ${shade(0.2, '#ff9000')};
     }
   }
 `;
 
 export const Background = styled.div`
   flex: 1;
-  background: url(${registerBackground}) no-repeat center;
+  background: url(${loginBackground}) no-repeat center;
   background-size: cover;
 `;

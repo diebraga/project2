@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import bannerBackground5 from '../_assets/banner7.jpg';
-import bannerBackground6 from '../_assets/banner5.jpg';
+import bannerBackground from '../../_assets/banner.jpg';
+import bannerBackground2 from '../../_assets/banner2.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -13,14 +13,13 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   flex: 1;
-  background: url(${bannerBackground5}) no-repeat center;
+  background: url(${bannerBackground}) no-repeat center;
   margin-top: -0%;
   background-size: cover;
   max-height: 500px;
   display: flex;
   place-content: center;
   align-content: center;
-  align-self: auto;
   h1 {
     max-width: 500px;
     font-size: 50px;
@@ -48,7 +47,7 @@ export const Content = styled.div`
 
   aside {
     height: 394px;
-    background: url(${bannerBackground6}) no-repeat center;
+    background: url(${bannerBackground2}) no-repeat center;
     background-size: cover;
   }
 
@@ -59,7 +58,7 @@ export const Content = styled.div`
   }
 `;
 
-export const GetStarted = styled.div`
+export const FormDiv = styled.div`
   background: #ff9000;
   padding-left: 20%;
   padding-right: 20%;

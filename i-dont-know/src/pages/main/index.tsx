@@ -5,13 +5,18 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 
 import { FiFileText, FiUser, FiPhone, FiMail } from 'react-icons/fi';
-import { Container, Banner, Content, FormDiv } from './styles';
-import getValidationErrors from '../utils/getValidationErros';
+import {
+  Container,
+  Banner,
+  Content,
+  FormDiv,
+} from '../../_styles_css/main/styles';
+import getValidationErrors from '../../utils/getValidationErros';
 
-import NavBar from '../_components/navbar';
-import Input from '../_components/input';
-import Button from '../_components/button';
-import Footer from '../_components/footer';
+import NavBar from '../../_components/navbar';
+import Input from '../../_components/input';
+import Button from '../../_components/button';
+import Footer from '../../_components/footer';
 
 const Main: React.FC = () => {
   const formRef = useRef<FormHandles>(null);

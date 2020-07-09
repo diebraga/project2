@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Main from '../main';
-import SignIn from '../_signin';
-import SignUp from '../_signup';
-import ForUsers from '../forUsers';
-import ForBusiness from '../forBusiness';
-import Explore from '../explore';
+import Main from '../pages/main';
+import SignIn from '../pages/_signin';
+import SignUp from '../pages/_signup';
+import ForUsers from '../pages/forUsers';
+import ForBusiness from '../pages/forBusiness';
+import Explore from '../pages/explore';
 
 export const Routes: React.FC = () => (
   <Switch>
@@ -20,3 +20,8 @@ export const Routes: React.FC = () => (
 );
 
 export default Routes;
+
+/**
+ *   Routes are responsible to manage all routes
+ *   of the application.
+ */

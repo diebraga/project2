@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import bannerBackground3 from '../_assets/banner3.jpg';
-import bannerBackground4 from '../_assets/banner4.jpg';
+import bannerBackground5 from '../../_assets/banner7.jpg';
+import bannerBackground6 from '../../_assets/banner5.jpg';
 
 export const Container = styled.div`
   height: 100vh;
@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   flex: 1;
-  background: url(${bannerBackground3}) no-repeat center;
+  background: url(${bannerBackground5}) no-repeat center;
   margin-top: -0%;
   background-size: cover;
   max-height: 500px;
@@ -21,7 +21,6 @@ export const Banner = styled.div`
   place-content: center;
   align-content: center;
   align-self: auto;
-
   h1 {
     max-width: 500px;
     font-size: 50px;
@@ -49,7 +48,7 @@ export const Content = styled.div`
 
   aside {
     height: 394px;
-    background: url(${bannerBackground4}) no-repeat center;
+    background: url(${bannerBackground6}) no-repeat center;
     background-size: cover;
   }
 
@@ -74,10 +73,6 @@ export const GetStarted = styled.div`
     color: #fff;
     font-size: 18px;
     margin-bottom: 5%;
-    a {
-      text-decoration: none;
-      color: #fff;
-    }
 
     &:hover {
       background: ${shade(0.2, '#eb3f3b')};
