@@ -118,7 +118,7 @@ easy way.
    <pre>
    Route Links in the app are mocked too.
    
-   All <a> are workng.
+   All links are workng/ not broken.
   
    I tested the app manually on a variaty of browsers:
    
@@ -147,7 +147,9 @@ Forms:
   4. Try to submit the form with all inputs valid and verify that a no errors message appears 
   in your console and input.
     
-    *** Warning Logs shoulden't be used in production as they can return confidential data. ***
+    *** Warning Logs shoulden't be used in production
+         as they can return confidential data, 
+          they're there for learning purposes. ***
     
        </pre>
 
@@ -168,10 +170,8 @@ Under `itinterprises/src/routes` you gonna find all routes in the application.
 
 Under `itinterprises/package.json` you gonna find all dependencies in the project in a json file.
 
-      </pre>
-
-
-    
+ </pre>
+ 
 ## Deployment
   
   The website is running deployed on Netlify:
