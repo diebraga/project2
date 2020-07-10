@@ -20,8 +20,10 @@ that are offering free spots in their companies and their set the prices.
   but diferent media and text content and a get started button. the `explore` section consists in a static
   list of companies that users can send their requests.
 
-  The `login` and `register` page, all elements are made with all best pratices of HTML and it's proops, 
-  CSS flex box animations, and design patterns aiming better code manteinence and growth.
+  The `login` and `register` page, all elements are made with the best pratices of HTML and it's proops, 
+  CSS flex box animations, and design patterns, all design structute are made aiming better code manteinence 
+  and growth, better code reading and test purposes. using the best principles in
+  softwere development such as 'DRY', 'KISS', 'Single responsibility' etc.
 
 ## Features
 
@@ -48,9 +50,6 @@ cards and input.
    Warning: The App is Entirely static but all the functions can be implemented at any time.
    
 
-## Media
-
-
 ## Technologies 
 
 - [Yarn](https://yarnpkg.com/pt-BR/docs/install)
@@ -66,6 +65,39 @@ cards and input.
 - 🔡 **Unform** — Easy peasy highly scalable ReactJS & React Native forms. 
 - 🔡 **Jest** — JavaScript Testing Framework. 
 
+## libraries
+<pre>
+* Yup:  it'ss a javascript object schema validation builder, in an object shape which 
+matches the values inputed for a validation, it can be used in both cases with 
+a HTML validation or separetly.
+https://github.com/jquense/yup
+
+* Styled Components:  it's a CSS library that allow us to wrap all CSS styles in
+a `var` that can be exported to our HTML pages as a react component. Syntax EX:
+
+
+import styled from 'styled-components';                  import React from 'react';
+                                                         
+export const Container = styled.div`         **=>**      import { Container } from '../../_styles_css/explore/styles';
+  p {                                                    
+    font-weight: bold;                                   const HelloWorld: React.FC = () => {
+    }                                                     return (
+`;                                                          <Container>
+                                                              **ReactJs**
+                                                            </Container>
+                                                           );
+                                                         };
+                                                         
+                                                         export default HelloWorld;
+
+For each element wrapped inside <Container> which is already an HTML tag in this case a `div` 
+styled components already creates a unique class wich makes it way easy to work on, isolating 
+the elements that you wanna apply styles.
+  
+* Jest:  it's a testing library that helps you to write tests in your application in a fast and
+easy way.
+</pre>
+   
 ## Testing
 
     **All components in the app are tested in unit tests using jest**
@@ -95,17 +127,20 @@ cards and input.
    Edge
    FireFox
    
+   and mobile:
+   
+   Iphone 10
+   Sansung Galaxy S7
+   
    Using the inspector I tested responsivity in variety of screen sizes.
    
 There are `console.log()`s as a test if the information has been sent or not in the forms.
 a validation returns the information and the possible errors.
-   </pre>
-
 
 Forms:
   1. Go to "/", "/register" or "/login" pages, right click and inspect and sonsole.
-  2. Try to submit the empty form and verify that an error mes
-  sage about the required fields 
+  2. Try to submit the empty form and verify that an error 
+  message about the required fields 
   appears in the console and input.
   3. Try to submit the form with an invalid email address and verify that a relevant error 
   message appears in the console and input.
@@ -114,32 +149,25 @@ Forms:
     
     *** Warning Logs shoulden't be used in production as they can return confidential data. ***
     
+       </pre>
+
 ## Structure
 
 <pre>
- Inside `src` folder you will find the all source code, with the respective folders representing the
- component or the page in the App.
- each folder has a index_file with the HTML code source.
- and a styles_file with al the CSS code source.
+Under `itinterprises/src` you gonna find all the project's code source.
+Under `itinterprises/src/__tests__` you gonna find all unit tests for all components in the app using jest framework.
+Under `itinterprises/src/_assets` you gonna find all media content used in the app.
+Under `itinterprises/src/_components` you gonna find all isolated components in the application that I can use in more than one 
+page such as buttons, forms, navbar etc. in order to follow the priciples softwere priciple of DRY 'don't repeat yourself' inside
+each folder you can find they own CSS following the principle of 'Single responsibility principle'.
+Under `itinterprises/src/_styles_css` you gonna find all the CSS content for each page separated in folders in the app.
+Under `itinterprises/src/pages` you gonna find all the HTML content in the app.
+Under `itinterprises/src/routes` you gonna find all routes to navigate in the app.
+Under `itinterprises/src/utils` you gonna find a validation config showed in the log in case of error.
+Under `itinterprises/src/routes` you gonna find all routes in the application.
 
-EX:
-  src_folder
-    signin_folder
-      index_file
-      styles_file
-    signup_folder
-      index_file
-      styles_file
-       
- as I'm using the lib styled components, I'm importing the css to index_file rendered in html tags <> as a component.
- 
- EX: 
- 
- import { Container } from './styles';
+Under `itinterprises/package.json` you gonna find all dependencies in the project in a json file.
 
-  <Container>
-    < h1 > {CSS from './styles' applied here} < /h1 >
-  </Container>
       </pre>
 
 
@@ -174,11 +202,13 @@ EX:
 ### Acknowledgements
 
 - I received inspiration for this project from:
+  
   https://www.wework.com/enterprise
   https://codeinstitute.net/
   https://www.airbnb.ie/
   https://rocketseat.com.br/
-  
+  Book JavaScript Design Patterns. Addy Osmani.
+
   
 ## License
 
