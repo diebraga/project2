@@ -9,3 +9,9 @@ export const ContentBox = styled.div`
     padding: 60px 0 60px 40px;
   }
 `;
+
+/**
+ * Export the styled component
+ * to the referenced page
+ *
+ */

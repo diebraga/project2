@@ -79,3 +79,9 @@ export const GetStarted = styled.div`
     }
   }
 `;
+
+/**
+ * Export the styled component
+ * to the referenced page
+ *
+ */

@@ -95,3 +95,9 @@ export const Container = styled.section`
     }
   }
 `;
+
+/**
+ * Export the styled component
+ * to your local index.tsx
+ *
+ */

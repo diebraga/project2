@@ -49,3 +49,9 @@ export const Container = styled.div<ContainerProps>`
     margin-right: 16px;
   }
 `;
+
+/**
+ * Export the styled component
+ * to your local index.tsx
+ *
+ */

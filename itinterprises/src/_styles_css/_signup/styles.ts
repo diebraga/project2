@@ -70,3 +70,9 @@ export const Background = styled.div`
   background: url(${registerBackground}) no-repeat center;
   background-size: cover;
 `;
+
+/**
+ * Export the styled component
+ * to the referenced page
+ *
+ */

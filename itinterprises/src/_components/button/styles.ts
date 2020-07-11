@@ -17,3 +17,9 @@ export const Container = styled.button`
     background: ${shade(0.2, '#ff9000')};
   }
 `;
+
+/**
+ * Export the styled component
+ * to your local index.tsx
+ *
+ */

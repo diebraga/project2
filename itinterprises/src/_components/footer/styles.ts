@@ -35,3 +35,9 @@ export const Content = styled.div`
     }
   }
 `;
+
+/**
+ * Export the styled component
+ * to your local index.tsx
+ *
+ */

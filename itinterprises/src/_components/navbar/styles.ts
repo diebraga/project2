@@ -63,3 +63,9 @@ export const LoginSide = styled.div`
     }
   }
 `;
+
+/**
+ * Export the styled component
+ * to your local index.tsx
+ *
+ */
