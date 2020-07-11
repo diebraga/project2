@@ -20,10 +20,16 @@ that are offering free spots in their companies and their set the prices.
   but diferent media and text content and a get started button. the `explore` section consists in a static
   list of companies that users can send their requests.
 
-  The `login` and `register` page, all elements are made with the best pratices of HTML and it's proops, 
-  CSS flex box animations, and design patterns, all design structute are made aiming better code manteinence 
+  The `login` and `register` page, all elements are made applying the best pratices of HTML and it's proops, 
+  CSS flex box animations, and design patterns in modern softwere development, all design structute are made aiming better code manteinence 
   and growth, better code reading and test purposes. using the best principles in
   softwere development such as 'DRY', 'KISS', 'Single responsibility' etc.
+  
+## Wireframe Mockups
+
+Following the link:
+
+https://www.figma.com/file/iXrksZZhuceX9jjduHFHsq/iTinterprises?node-id=9%3A254
 
 ## Features
 
@@ -36,7 +42,7 @@ bellow a link pointing to the Login section if user already have an account.
 - Main Page "/" The page consists in an overview of iTenterprises, how it works with a contact form bellow
 for more info.
 
-- Users page "/forusers" The page consists sections in "Advantages of being a user of the plataform" with a 
+- Users page "/forusers" The page consists sections in "Advantages of being52 a user of the plataform" with a 
 get started.
 
 - Companies page "/forcompanies" The page consists in sections "Advantages of being a company using the plataform" 
